@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head>
+	<title>Fifteen Puzzle Game</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="fifteen.css"/>
+	<script src="fifteen.js" type="text/javascript"></script>
+	</head>
+	<!--first call onload function showing the whole picture-->
+	<body onload="totalPuzzle();">
+		<h1 id="titleHead">Fifteen Puzzle&nbsp;created by Carezno</h1>
+		<div id="timer"></div>
+<select id = "puzzleselect">
+  <option value="4x4">Four by Four</option>
+  <option value="3x3">Three by Three</option>
+  <option value="6x6">Six by Six</option>
+</select>
+
+Moves: <span id="moves">0</span>
+
+<button id="create" onclick="start();puzzleSelect();">SHUFFLE!!!</button>
+</div>
+</body>
+</html>
